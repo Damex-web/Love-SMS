@@ -1,1 +1,191 @@
+    /* 
+    font-family: 'Parisienne', cursive; 
+    font-family: 'Alex Brush', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Great Vibes', cursive;
+    */
+    body {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #F5F5F5;
+        box-sizing: border-box;
+        font-family: "Parisienne", cursive;
+        transition: background-color 0.3s ease;
+    }
+    .wrapper {
+        width: 80%;
+        margin-inline: auto;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-block: 5px;
+        margin-bottom: 5px;
+    }
+    .logo {
+        font-size: 1.9em;
+        font-weight: 900;
+        cursor: pointer;
+    }
+    .theme {
+        font-size: 1.15em;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        /* font-family: "Lora", serif; */
+    }
+    button {
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: red;
+    }
+    .dark-btn {
+        background-color: #333;
+        color: white;
+    }
+    .light-btn {
+        background-color: #ddd;
+        color: black;
+    }
+    .dark-btn:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .light-btn:hover {
+        background-color: #333;
+        color: #ddd;
+    }
+    .main {
+        margin: 0;
+        padding: 0;
+    }
+    .video {
+        display: flex;
+        flex-direction: column;
+    }
+    video {
+        margin: auto;
+        width: 100%;
+    }
+    a {
+        display: inline;
+        margin: 5px 30px 15px;
+        color: #007bff;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #0056b3;
+    }
+    .content {
+        margin-top: 15px;
+    }
+    h1 {
+        display: inline;
+        padding: 20px 30px;
+        margin-left: 25px;
+        position: relative;
+        visibility: hidden;
+    }
+    h1::before {
+        content: "";
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-left: -32px;
+        position: absolute;
+        background: #FF5252; 
+	clip-path: path("M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z");
+    animation: heartbeat 1s 0.2s infinite;
+    }
+    h1::after {
+        content: "";
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background: #FF5252;
+	clip-path: path("M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z");
+        animation: heartbeat 1s infinite;
+    }
 
+    @keyframes heartbeat {
+        0%, 100% {
+            transform: scale(1);
+        }
+        14% {
+            transform: scale(1.3);
+        }
+        28% {
+            transform: scale(1);
+        }
+        42% {
+            transform: scale(1.3);
+        }
+        70% {
+            transform: scale(1);
+        }
+    }
+    .content-items {
+        padding-bottom: 5px;
+    }
+    .items {
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    p {
+        max-width: 100ch;
+        max-width: 100%;
+        padding: 15px 20px;
+        border-radius: 10px;
+        text-align: justify;
+        visibility: hidden;
+    }
+    .likes {
+        position: relative;
+        padding: 20px 40px;
+        margin-top: 10px;
+    }
+
+    .like-btn {
+        width: 40px;
+        height: 40px;
+        background-color: #ff4d4d;
+        clip-path: path("M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z");
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        position: absolute;
+        transform: scale(2.05);
+    }
+
+    .like-btn:hover {
+        transform: scale(2.15);
+    }
+
+    .liked {
+        background-color: #4CAF50 !important;
+    }
+    .counter {
+        font-size: 15px;
+        margin-top: -38px;
+        color: #007bff;
+    }
+    .toup {
+        text-align: right;
+        font-size: 2em;
+        margin-top: -10px;
+        transition: all 10s linear;
+    }
+
+    footer {
+        height: 15vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
