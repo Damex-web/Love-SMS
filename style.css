@@ -11,7 +11,8 @@
         margin: 0;
         background-color: #F5F5F5;
         box-sizing: border-box;
-        font-family: "Parisienne", cursive;
+        /* font-family: "Parisienne", cursive; */
+		font-family: system-ui;
         transition: background-color 0.3s ease;
     }
     .wrapper {
