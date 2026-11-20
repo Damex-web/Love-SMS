@@ -11,7 +11,7 @@
         margin: 0;
         background-color: #F5F5F5;
         box-sizing: border-box;
-        /* font-family: "Dancing Script", cursive; */
+        /* font-family: "Parisienne", cursive; */
         transition: background-color 0.3s ease;
     }
     .wrapper {
@@ -133,7 +133,7 @@
     }
     .items {
         font-size: 18px;
-        /* font-family: Arial, sans-serif; */
+        font-family: Arial, sans-serif;
 		font-family: system-ui;
         line-height: 1.6;
     }
